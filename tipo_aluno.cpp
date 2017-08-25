@@ -32,8 +32,10 @@ double tipo_aluno::getNota(int index){
     return this->notas[index];
 }
 
-void tipo_aluno::matricular(tipo_aluno aluno){
+void tipo_aluno::matricular(vector<tipo_aluno> matriculados, tipo_aluno aluno){
 
-    if(aluno.getMatricula())
+    for (int i = 0; i < matriculados.size(); i++) {
+        cout << "teste" << '\n';
+    }
     cout << "Matriculado" << '\n';
 }
