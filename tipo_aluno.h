@@ -29,7 +29,7 @@ public:
     string getMatricula();
     void setNota(int index, double nota);
     double getNota(int index);
-    //void matricular(vector<tipo_aluno> matriculados, tipo_aluno aluno);
+    void matricular(vector<tipo_aluno> matriculados, tipo_aluno aluno);
 };
 
 #endif
