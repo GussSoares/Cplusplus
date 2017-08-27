@@ -13,7 +13,7 @@ class tipo_aluno{
 
 private:
     /* data */
-    vector<tipo_aluno> matriculados;
+    vector<int> matriculados;
     string nome;
     string telefone;
     string matricula;
@@ -29,7 +29,8 @@ public:
     string getMatricula();
     void setNota(int index, double nota);
     double getNota(int index);
-    void matricular(vector<tipo_aluno> matriculados, tipo_aluno aluno);
+    void matricular(vector<int> matriculados, tipo_aluno aluno);
+    void info_aluno(tipo_aluno aluno);
 };
 
 #endif

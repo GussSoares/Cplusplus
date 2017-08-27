@@ -34,13 +34,22 @@ double tipo_aluno::getNota(int index){
     return this->notas[index];
 }
 
-void tipo_aluno::matricular(vector<tipo_aluno> matriculados, tipo_aluno aluno){
+void tipo_aluno::matricular(vector<int> matriculados, tipo_aluno aluno){
 
+    //cout << matriculados.size() << '\n';
     for (int i = 0; i < matriculados.size(); i++) {
-        if(aluno.getMatricula() == "123"){
-            cout << "teste" << '\n';
+        if(aluno.getMatricula() == matriculados[i]){
+            cout << "Aluno já está matriculado com o seguinte numero de matricula" << aluno.getMatricula() << '\n';
+            return;
         }
     }
-    //matriculados.insert(aluno);
+    matriculados.push_back(5);
     cout << "Matriculado" << '\n';
+}
+
+void tipo_aluno::info_aluno(tipo_aluno aluno){
+    cout << "Nome: " << aluno.getNome() << "\n" <<
+            "Telefone: " << aluno.getTelefone() << "\n" <<
+            "Matricula: " << aluno.getMatricula() << "\n" <<
+            "Média: " << (aluno.getNota(0)+aluno.getNota(1))/2 << endl;
 }
