@@ -13,6 +13,6 @@ int main(int argc, char const *argv[]) {
     cout << "Nome: " << aluno.getNome() << "\n" <<
             "Telefone: " << aluno.getTelefone() << "\n" <<
             "Média: " << (aluno.getNota(0)+aluno.getNota(1))/2 << endl;
-    
+
     return 0;
 }

@@ -14,9 +14,9 @@ class tipo_aluno{
 private:
     /* data */
     vector<tipo_aluno> matriculados;
-    std::string nome;
-    std::string telefone;
-    std::string matricula;
+    string nome;
+    string telefone;
+    string matricula;
     double notas[3];
 
 public:
@@ -29,7 +29,7 @@ public:
     string getMatricula();
     void setNota(int index, double nota);
     double getNota(int index);
-    void matricular(tipo_aluno aluno);
+    //void matricular(vector<tipo_aluno> matriculados, tipo_aluno aluno);
 };
 
 #endif

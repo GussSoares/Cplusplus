@@ -31,11 +31,11 @@ void tipo_aluno::setNota(int index, double nota){
 double tipo_aluno::getNota(int index){
     return this->notas[index];
 }
-
-void tipo_aluno::matricular(vector<tipo_aluno> matriculados, tipo_aluno aluno){
-
-    for (int i = 0; i < matriculados.size(); i++) {
-        cout << "teste" << '\n';
-    }
-    cout << "Matriculado" << '\n';
-}
+//
+// void tipo_aluno::matricular(vector<tipo_aluno> matriculados, tipo_aluno aluno){
+//
+//     for (int i = 0; i < matriculados.size(); i++) {
+//         cout << "teste" << '\n';
+//     }
+//     cout << "Matriculado" << '\n';
+// }
